@@ -7,6 +7,8 @@ let div3 = document.createElement('div');
 let div4 = document.createElement('div');
 let div5 = document.createElement('div');
 let div6 = document.createElement('div');
+let div7 = document.createElement('div');
+let div8 = document.createElement('div');
 
 
 myHOne.innerText = "Choose a background color";
@@ -27,6 +29,10 @@ mySection.appendChild(div5);
 div5.classList.add('div5');
 mySection.appendChild(div6);
 div6.classList.add('div6');
+mySection.appendChild(div7);
+div7.classList.add('div7');
+mySection.appendChild(div8);
+div8.classList.add('div8')
 
 document.body.appendChild(myContainer);
 
@@ -48,4 +54,10 @@ document.querySelector('.div5').addEventListener('click', () => {
 })
 document.querySelector('.div6').addEventListener('click', () => {
     document.querySelector('.group').style.background = 'rgb(60, 47, 47)';
+})
+document.querySelector('.div7').addEventListener('click', () => {
+    document.querySelector('.group').style.background = 'rgb(191, 191, 241)';
+})
+document.querySelector('.div8').addEventListener('click', () => {
+    document.querySelector('.group').style.background = 'rgb(227, 166, 52)';
 })
